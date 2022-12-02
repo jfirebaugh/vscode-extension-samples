@@ -8,7 +8,8 @@
 		"vscode": "^1.32.0"
 	},
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.helloWorld",
+		"onCommand:extension.executeHelloWorld"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -16,6 +17,10 @@
 			{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "extension.executeHelloWorld",
+				"title": "Execute 'Hello World' command"
 			}
 		]
 	},
